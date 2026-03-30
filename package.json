@@ -1,7 +1,7 @@
 {
   "name": "schiz",
   "version": "1.0.0",
-  "description": "Express server with live reload",
+  "description": "Mental health chatbot with multi-system remedies",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

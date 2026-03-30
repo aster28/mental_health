@@ -1,0 +1,27 @@
+[
+  {
+    "question": "schizophrenia",
+    "keywords": ["schizophrenia", "mental illness", "psychosis"],
+    "answer": "Schizophrenia treatments:\n\n- **Allopathy:** Antipsychotics such as risperidone, olanzapine, quetiapine.\n- **Ayurveda:** Brahmi, Ashwagandha, Shankhapushpi for cognitive support and stress reduction.\n- **Unani:** Majoon-e-Azara, Joshanda formulations for mental well-being.\n- **Medicinal plants:** Ginkgo biloba, Gotu kola for memory and cognition.\n\n⚠️ Educational info only. Consult a doctor before taking any medicine or herbs."
+  },
+  {
+    "question": "anxiety",
+    "keywords": ["anxiety", "stress", "nervousness"],
+    "answer": "Anxiety management:\n\n- **Allopathy:** SSRIs, benzodiazepines (short-term).\n- **Ayurveda:** Ashwagandha, Jatamansi, Brahmi for calming and stress reduction.\n- **Unani:** Roghan-e-Khuskhus, Majoon-e-Kushta formulations.\n- **Medicinal plants:** Chamomile, Valerian root, Lemon balm.\n\n⚠️ Educational info only. Consult a doctor before taking any medicine or herbs."
+  },
+  {
+    "question": "depression",
+    "keywords": ["depression", "low mood", "sadness"],
+    "answer": "Depression treatments:\n\n- **Allopathy:** SSRIs, SNRIs, psychotherapy.\n- **Ayurveda:** Ashwagandha, Jatamansi, Brahmi for mood support.\n- **Unani:** Majoon-e-Kausar, Joshanda-e-Mazbooti.\n- **Medicinal plants:** St. John’s Wort, Lemon balm.\n\n⚠️ Educational info only. Consult a doctor before taking any medicine or herbs."
+  },
+  {
+    "question": "memory",
+    "keywords": ["memory", "cognition", "brain"],
+    "answer": "Memory and cognition support:\n\n- **Allopathy:** Donepezil, Rivastigmine (for cognitive decline).\n- **Ayurveda:** Brahmi, Shankhapushpi, Ashwagandha.\n- **Unani:** Majoon-e-Bahri, Joshanda-e-Aqli.\n- **Medicinal plants:** Ginkgo biloba, Gotu kola, Bacopa monnieri.\n\n⚠️ Educational info only. Consult a doctor before taking any medicine or herbs."
+  },
+  {
+    "question": "bipolar disorder",
+    "keywords": ["bipolar", "manic depression", "mood swings"],
+    "answer": "Bipolar disorder treatments:\n\n- **Allopathy:** Mood stabilizers such as lithium, valproate, antipsychotics.\n- **Ayurveda:** Ashwagandha, Brahmi, Jatamansi.\n- **Unani:** Majoon-e-Murabba, Joshanda-e-Sukoon.\n- **Medicinal plants:** St. John’s Wort (with caution), Ginkgo biloba.\n\n⚠️ Educational info only. Consult a doctor before taking any medicine or herbs."
+  }
+]

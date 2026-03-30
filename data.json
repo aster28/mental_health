@@ -2,96 +2,71 @@
   {
     "question": "schizophrenia",
     "keywords": ["delusion", "hallucination", "mental illness", "psychosis"],
-    "answer": "Schizophrenia treatments:\n- **Allopathy:** Antipsychotics such as risperidone, olanzapine, quetiapine.\n- **Ayurveda:** Brahmi, Ashwagandha, Shankhapushpi for cognitive support.\n- **Unani:** Majoon-e-Azara, Joshanda formulations for mental well-being.\n- **Medicinal plants:** Ginkgo biloba, Gotu kola for memory and cognition.\n⚠️ Educational info only. Consult a doctor before taking any medicine or herbs."
+    "answer": "🧠 **Schizophrenia treatments:**\n- **Allopathy:** Antipsychotics such as risperidone, olanzapine, quetiapine.\n- **Ayurveda:** Brahmi, Ashwagandha, Shankhapushpi for cognitive support.\n- **Unani:** Majoon-e-Azara, Joshanda formulations for mental well-being.\n- **Medicinal plants:** Ginkgo biloba, Gotu kola for memory and cognition.\n⚠️ Educational info only. Consult a doctor before taking any medicine or herbs."
   },
   {
     "question": "delusion",
     "keywords": ["false belief", "schizophrenia", "hallucination"],
-    "answer": "Delusion treatments:\n- **Allopathy:** Antipsychotic medications.\n- **Ayurveda:** Brahmi, Shankhapushpi for mental clarity.\n- **Unani:** Joshanda formulations for mental wellness.\n- **Medicinal plants:** Ginkgo biloba, Gotu kola.\n⚠️ Educational info only. Consult a healthcare professional."
+    "answer": "🤯 **Delusion treatments:**\n- **Allopathy:** Antipsychotic medications.\n- **Ayurveda:** Brahmi, Shankhapushpi for mental clarity.\n- **Unani:** Joshanda formulations for mental wellness.\n- **Medicinal plants:** Ginkgo biloba, Gotu kola.\n⚠️ Educational info only. Consult a healthcare professional."
   },
   {
     "question": "anxiety",
     "keywords": ["stress", "worry", "panic", "nervousness"],
-    "answer": "Anxiety treatments:\n- **Allopathy:** SSRIs (sertraline, fluoxetine), benzodiazepines (short-term).\n- **Ayurveda:** Ashwagandha, Jatamansi, Brahmi.\n- **Unani:** Majoon-e-Falah, Rose water therapy.\n- **Medicinal plants:** Chamomile, Lemon balm, Lavender.\n⚠️ Educational info only. Consult a doctor before taking any medicine or herbs."
+    "answer": "😰 **Anxiety treatments:**\n- **Allopathy:** SSRIs (sertraline, fluoxetine), benzodiazepines (short-term).\n- **Ayurveda:** Ashwagandha, Jatamansi, Brahmi.\n- **Unani:** Majoon-e-Falah, Rose water therapy.\n- **Medicinal plants:** Chamomile, Lemon balm, Lavender.\n⚠️ Educational info only. Consult a doctor before taking any medicine or herbs."
   },
   {
     "question": "memory",
     "keywords": ["forgetfulness", "cognition", "brain health"],
-    "answer": "Memory and cognition support:\n- **Allopathy:** Cognitive enhancers like donepezil, rivastigmine.\n- **Ayurveda:** Brahmi, Shankhapushpi, Gotu kola.\n- **Unani:** Joshanda with medicinal herbs.\n- **Medicinal plants:** Ginkgo biloba, Gotu kola, Bacopa monnieri.\n⚠️ Educational info only. Consult a doctor before taking any medicine or herbs."
+    "answer": "🧠 **Memory and cognition support:**\n- **Allopathy:** Cognitive enhancers like donepezil, rivastigmine.\n- **Ayurveda:** Brahmi, Shankhapushpi, Gotu kola.\n- **Unani:** Joshanda with medicinal herbs.\n- **Medicinal plants:** Ginkgo biloba, Gotu kola, Bacopa monnieri.\n⚠️ Educational info only. Consult a doctor before taking any medicine or herbs."
   },
   {
     "question": "depression",
     "keywords": ["sadness", "low mood", "melancholy", "mental health"],
-    "answer": "Depression treatments:\n- **Allopathy:** SSRIs, psychotherapy.\n- **Ayurveda:** Ashwagandha, Brahmi, St. John's Wort.\n- **Unani:** Majoon-e-Falah, Rose water therapy.\n- **Medicinal plants:** St. John's Wort, Lavender, Saffron.\n⚠️ Educational info only. Consult a doctor before taking any medicine or herbs."
+    "answer": "😞 **Depression treatments:**\n- **Allopathy:** SSRIs, psychotherapy.\n- **Ayurveda:** Ashwagandha, Brahmi, St. John's Wort.\n- **Unani:** Majoon-e-Falah, Rose water therapy.\n- **Medicinal plants:** St. John's Wort, Lavender, Saffron.\n⚠️ Educational info only. Consult a doctor before taking any medicine or herbs."
   },
   {
     "question": "bipolar disorder",
     "keywords": ["mania", "hypomania", "depression", "mood swings"],
-    "answer": "Bipolar disorder treatments:\n- **Allopathy:** Mood stabilizers like lithium, valproate.\n- **Ayurveda:** Brahmi, Ashwagandha, Jatamansi.\n- **Unani:** Majoon-e-Falah for mood regulation.\n- **Medicinal plants:** St. John's Wort, Bacopa monnieri.\n⚠️ Educational info only. Consult a psychiatrist."
+    "answer": "🎢 **Bipolar disorder treatments:**\n- **Allopathy:** Mood stabilizers like lithium, valproate.\n- **Ayurveda:** Brahmi, Ashwagandha, Jatamansi.\n- **Unani:** Majoon-e-Falah for mood regulation.\n- **Medicinal plants:** St. John's Wort, Bacopa monnieri.\n⚠️ Educational info only. Consult a psychiatrist."
   },
   {
     "question": "obsessive compulsive disorder",
     "keywords": ["OCD", "obsessions", "compulsions"],
-    "answer": "OCD treatments:\n- **Allopathy:** SSRIs, cognitive behavioral therapy (CBT).\n- **Ayurveda:** Brahmi, Shankhapushpi for mental calmness.\n- **Unani:** Joshanda with calming herbs.\n- **Medicinal plants:** Lavender, Lemon balm.\n⚠️ Educational info only. Consult a mental health professional."
+    "answer": "🌀 **OCD treatments:**\n- **Allopathy:** SSRIs, cognitive behavioral therapy (CBT).\n- **Ayurveda:** Brahmi, Shankhapushpi.\n- **Unani:** Joshanda with calming herbs.\n- **Medicinal plants:** Lavender, Lemon balm.\n⚠️ Educational info only. Consult a mental health professional."
   },
   {
     "question": "panic disorder",
     "keywords": ["panic attack", "anxiety", "fear"],
-    "answer": "Panic disorder treatments:\n- **Allopathy:** SSRIs, benzodiazepines (short-term).\n- **Ayurveda:** Ashwagandha, Jatamansi, Brahmi.\n- **Unani:** Majoon-e-Falah.\n- **Medicinal plants:** Chamomile, Lavender.\n⚠️ Educational info only. Consult a doctor."
+    "answer": "😱 **Panic disorder treatments:**\n- **Allopathy:** SSRIs, benzodiazepines (short-term).\n- **Ayurveda:** Ashwagandha, Jatamansi, Brahmi.\n- **Unani:** Majoon-e-Falah.\n- **Medicinal plants:** Chamomile, Lavender.\n⚠️ Educational info only. Consult a doctor."
   },
   {
     "question": "insomnia",
     "keywords": ["sleep disorder", "sleeplessness", "trouble sleeping"],
-    "answer": "Insomnia treatments:\n- **Allopathy:** Short-term sedatives, sleep hygiene.\n- **Ayurveda:** Jatamansi, Ashwagandha, Brahmi.\n- **Unani:** Rose water, herbal decoctions.\n- **Medicinal plants:** Valerian, Chamomile.\n⚠️ Educational info only. Consult a doctor."
+    "answer": "💤 **Insomnia treatments:**\n- **Allopathy:** Short-term sedatives, sleep hygiene.\n- **Ayurveda:** Jatamansi, Ashwagandha, Brahmi.\n- **Unani:** Rose water, herbal decoctions.\n- **Medicinal plants:** Valerian, Chamomile.\n⚠️ Educational info only. Consult a doctor."
   },
   {
-    "question": "attention deficit hyperactivity disorder",
-    "keywords": ["ADHD", "hyperactivity", "inattention", "focus"],
-    "answer": "ADHD treatments:\n- **Allopathy:** Stimulants like methylphenidate, atomoxetine.\n- **Ayurveda:** Brahmi, Shankhapushpi, Ashwagandha.\n- **Unani:** Majoon-e-Falah.\n- **Medicinal plants:** Ginkgo biloba, Gotu kola.\n⚠️ Educational info only. Consult a doctor."
+    "question": "what is schizophrenia",
+    "keywords": ["schizophrenia definition", "schizophrenia meaning"],
+    "answer": "🧠 **Schizophrenia** is a chronic mental disorder affecting a person's ability to think, feel, and behave clearly. Symptoms include hallucinations, delusions, disorganized thinking, and social withdrawal.\n⚠️ Educational info only. Consult a psychiatrist for diagnosis or treatment."
   },
   {
-    "question": "post traumatic stress disorder",
-    "keywords": ["PTSD", "trauma", "flashbacks", "nightmares"],
-    "answer": "PTSD treatments:\n- **Allopathy:** SSRIs, therapy (CBT, EMDR).\n- **Ayurveda:** Ashwagandha, Brahmi.\n- **Unani:** Majoon-e-Falah.\n- **Medicinal plants:** Lavender, Chamomile.\n⚠️ Educational info only. Consult a doctor."
+    "question": "what is delusion",
+    "keywords": ["delusion definition", "false belief"],
+    "answer": "🤯 **Delusion** is a firmly held false belief that is resistant to reason or contrary evidence. Often seen in mental disorders like schizophrenia.\n⚠️ Educational info only. Consult a healthcare professional."
   },
   {
-    "question": "alzheimer",
-    "keywords": ["dementia", "memory loss", "cognitive decline"],
-    "answer": "Alzheimer's treatments:\n- **Allopathy:** Donepezil, Rivastigmine.\n- **Ayurveda:** Brahmi, Shankhapushpi, Gotu kola.\n- **Unani:** Herbal decoctions.\n- **Medicinal plants:** Ginkgo biloba, Bacopa monnieri.\n⚠️ Educational info only. Consult a doctor."
+    "question": "what is vata",
+    "keywords": ["vata definition", "vata dosha"],
+    "answer": "🌬️ **Vata** is one of the three doshas in Ayurveda, representing air and space. It governs movement, breathing, and circulation. Imbalance can cause anxiety, restlessness, and insomnia."
   },
   {
-    "question": "parkinson",
-    "keywords": ["tremor", "movement disorder", "rigidity"],
-    "answer": "Parkinson's treatments:\n- **Allopathy:** Levodopa, dopamine agonists.\n- **Ayurveda:** Mucuna pruriens, Ashwagandha.\n- **Unani:** Majoon-e-Falah herbal support.\n- **Medicinal plants:** Mucuna pruriens, Ginkgo biloba.\n⚠️ Educational info only. Consult a neurologist."
+    "question": "what is pitta",
+    "keywords": ["pitta definition", "pitta dosha"],
+    "answer": "🔥 **Pitta** is the Ayurvedic dosha associated with fire and water. It governs metabolism, digestion, and body temperature. Imbalance can cause irritability, inflammation, and anger."
   },
   {
-    "question": "stroke",
-    "keywords": ["brain attack", "cerebrovascular accident", "weakness", "paralysis"],
-    "answer": "Stroke treatments:\n- **Allopathy:** Thrombolytics, physiotherapy.\n- **Ayurveda:** Brahmi, Shankhapushpi for recovery.\n- **Unani:** Herbal decoctions.\n- **Medicinal plants:** Ginkgo biloba, Gotu kola.\n⚠️ Educational info only. Consult a doctor immediately."
-  },
-  {
-    "question": "migraine",
-    "keywords": ["headache", "pain", "aura", "nausea"],
-    "answer": "Migraine treatments:\n- **Allopathy:** Triptans, NSAIDs.\n- **Ayurveda:** Feverfew, Brahmi, Ashwagandha.\n- **Unani:** Herbal decoctions.\n- **Medicinal plants:** Ginger, Feverfew.\n⚠️ Educational info only. Consult a doctor."
-  },
-  {
-    "question": "epilepsy",
-    "keywords": ["seizures", "convulsions", "fits"],
-    "answer": "Epilepsy treatments:\n- **Allopathy:** Anticonvulsants (valproate, carbamazepine).\n- **Ayurveda:** Brahmi, Shankhapushpi.\n- **Unani:** Majoon-e-Falah.\n- **Medicinal plants:** Bacopa monnieri, Gotu kola.\n⚠️ Educational info only. Consult a neurologist."
-  },
-  {
-    "question": "autism",
-    "keywords": ["autism spectrum disorder", "ASD", "developmental disorder"],
-    "answer": "Autism treatments:\n- **Allopathy:** Behavioral therapy, speech therapy.\n- **Ayurveda:** Brahmi, Shankhapushpi.\n- **Unani:** Herbal tonics.\n- **Medicinal plants:** Ginkgo biloba, Gotu kola.\n⚠️ Educational info only. Consult a healthcare professional."
-  },
-  {
-    "question": "obsessive compulsive disorder",
-    "keywords": ["OCD", "obsessions", "compulsions"],
-    "answer": "OCD treatments:\n- **Allopathy:** SSRIs, CBT therapy.\n- **Ayurveda:** Brahmi, Shankhapushpi.\n- **Unani:** Herbal formulations.\n- **Medicinal plants:** Lavender, Lemon balm.\n⚠️ Educational info only. Consult a mental health professional."
-  },
-  {
-    "question": "panic disorder",
-    "keywords": ["panic attack", "anxiety", "fear"],
-    "answer": "Panic disorder treatments:\n- **Allopathy:** SSRIs, benzodiazepines.\n- **Ayurveda:** Ashwagandha, Jatamansi, Brahmi.\n- **Unani:** Majoon-e-Falah.\n- **Medicinal plants:** Chamomile, Lavender.\n⚠️ Educational info only. Consult a doctor."
+    "question": "what is kapha",
+    "keywords": ["kapha definition", "kapha dosha"],
+    "answer": "💧 **Kapha** is the dosha representing earth and water. It governs structure, stability, and immunity. Imbalance can cause lethargy, weight gain, and depression."
   }
 ]

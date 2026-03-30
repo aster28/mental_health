@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, "public")));
 let dataset = [];
 try {
   dataset = JSON.parse(fs.readFileSync(path.join(__dirname, "data.json")));
-  console.log("✅ Data loaded:", dataset.length, "items");
+  console.log(`✅ Data loaded: ${dataset.length} items`);
 } catch (err) {
   console.error("❌ Error loading data.json:", err);
 }
@@ -22,7 +22,7 @@ try {
 // Chat API
 app.post("/chat", (req, res) => {
   try {
-    const input = (req.body.message || "").toLowerCase();
+    const input = (req.body.message || "").toLowerCase().trim();
     let found = false;
 
     for (let item of dataset) {
@@ -51,7 +51,7 @@ app.post("/chat", (req, res) => {
     }
   } catch (err) {
     console.error("❌ CHAT ERROR:", err);
-    res.status(500).json({ reply: "Server error" });
+    res.status(500).json({ reply: "❌ Server error" });
   }
 });
 
@@ -61,5 +61,27 @@ app.get("*", (req, res) => {
 });
 
 // Start server on Render port
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+      }
+
+      if (found) break;
+    }
+
+    if (!found) {
+      res.json({ reply: "🤖 Sorry, no information found for this condition. Try another keyword or disease." });
+    }
+  } catch (err) {
+    console.error("❌ CHAT ERROR:", err);
+    res.status(500).json({ reply: "❌ Server error" });
+  }
+});
+
+// Front-end fallback
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
+// Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));

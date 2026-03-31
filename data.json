@@ -73,5 +73,25 @@
     "question": "what is kapha",
     "keywords": ["kapha definition", "kapha dosha"],
     "answer": "💧 **Kapha** is the dosha representing earth and water. It governs structure, stability, and immunity. Imbalance can cause lethargy, weight gain, and depression."
-  }
+  },
+{
+  "question": "schizophrenia meaning",
+  "keywords": ["what is schizophrenia", "define schizophrenia", "schizophrenia meaning"],
+  "answer": "🧠 **Schizophrenia** is a serious mental disorder that affects thinking, emotions, and behavior. People may experience hallucinations, delusions, disorganized speech, and difficulty distinguishing reality."
+},
+{
+  "question": "delusion meaning",
+  "keywords": ["what is delusion", "define delusion", "false belief"],
+  "answer": "🤯 **Delusion** is a strong false belief that is not based in reality and does not change even when proven wrong. It is commonly seen in schizophrenia."
+},
+{
+  "question": "illusion meaning",
+  "keywords": ["what is illusion", "define illusion"],
+  "answer": "👁️ **Illusion** is a misinterpretation of a real external stimulus. For example, seeing a rope and thinking it is a snake."
+},
+{
+  "question": "hallucination meaning",
+  "keywords": ["what is hallucination", "define hallucination"],
+  "answer": "👂 **Hallucination** is perceiving something that is not actually present, such as hearing voices or seeing things that are not there."
+}
 ]

@@ -24,24 +24,40 @@ app.post("/chat", (req, res) => {
   try {
     const input = (req.body.message || "").toLowerCase().trim();
 
+    // 🧠 AI-like intent detection
+    if (input.includes("sad") || input.includes("low") || input.includes("hopeless")) {
+      return res.json({ reply: "😞 It sounds like depression. Try typing 'depression' to learn more." });
+    }
+
+    if (input.includes("anxious") || input.includes("panic") || input.includes("nervous")) {
+      return res.json({ reply: "😰 This may relate to anxiety. Type 'anxiety' for treatments and remedies." });
+    }
+
+    if (input.includes("hear voices") || input.includes("see things") || input.includes("not real")) {
+      return res.json({ reply: "🧠 These symptoms may relate to schizophrenia or hallucinations. Type 'schizophrenia' to learn more." });
+    }
+
+    if (input.includes("no motivation") || input.includes("no energy") || input.includes("lazy")) {
+      return res.json({ reply: "🧪 This may relate to dopamine imbalance. Type 'dopamine' to learn more." });
+    }
+
+    // 🔍 Smart dataset matching
     for (let item of dataset) {
       const question = (item.question || "").toLowerCase();
       const keywords = item.keywords || [];
 
-      if (input.includes(question) || question.includes(input)) {
+      if (
+        input.includes(question) ||
+        question.includes(input) ||
+        keywords.some(k => input.includes(k.toLowerCase()))
+      ) {
         return res.json({ reply: item.answer });
       }
+    }
 
-      for (let key of keywords) {
-        if (input.includes(key.toLowerCase())) {
-          return res.json({ reply: item.answer });
-        }
-      }
-    } // ✅ CLOSE for-loop properly
-
-    // No match
+    // ❌ Default response
     return res.json({
-      reply: "🤖 Sorry, no information found. Try keywords like schizophrenia, dopamine, anxiety."
+      reply: "🤖 I couldn't fully understand. Try asking about schizophrenia, anxiety, dopamine, or symptoms."
     });
 
   } catch (err) {

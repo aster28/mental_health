@@ -4,81 +4,49 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
-
-// Middleware
 app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
-// Load dataset
 let dataset = [];
 try {
   dataset = JSON.parse(fs.readFileSync(path.join(__dirname, "data.json")));
   console.log("✅ Data loaded:", dataset.length);
-} catch (err) {
+} catch(err) {
   console.error("❌ Error loading data.json:", err);
 }
 
-app.post("/chat", (req, res) => {
-  try {
-    const input = (req.body.message || "").toLowerCase().trim();
+app.post("/chat", (req,res)=>{
+  try{
+    const input = (req.body.message||"").toLowerCase().trim();
 
-    // 🧠 AI-like intent detection
-    if (input.includes("sad") || input.includes("low") || input.includes("hopeless")) {
-      return res.json({ reply: "😞 It sounds like depression. Try typing 'depression' to learn more." });
-    }
-    if (input.includes("can't sleep") || input.includes("insomnia")) {
-      return res.json({ reply: "💤 You may be experiencing insomnia. Type 'insomnia' for remedies." });
-    }
+    // AI-like understanding
+    if(input.includes("sad")||input.includes("low")||input.includes("hopeless"))
+      return res.json({reply:"😞 You may be experiencing depression. Try typing 'depression' to learn more."});
+    if(input.includes("anxious")||input.includes("panic")||input.includes("nervous"))
+      return res.json({reply:"😰 This may relate to anxiety. Type 'anxiety' for remedies."});
+    if(input.includes("hear voices")||input.includes("see things")||input.includes("not real"))
+      return res.json({reply:"🧠 These symptoms may relate to schizophrenia. Type 'schizophrenia' to learn more."});
+    if(input.includes("no motivation")||input.includes("no energy"))
+      return res.json({reply:"🧪 This may relate to dopamine imbalance. Type 'dopamine' to learn more."});
 
-    if (input.includes("fear") || input.includes("heart racing")) {
-      return res.json({ reply: "😱 This may be a panic attack. Type 'panic disorder' to learn more." });
-    }
-
-    if (input.includes("anxious") || input.includes("panic") || input.includes("nervous")) {
-      return res.json({ reply: "😰 This may relate to anxiety. Type 'anxiety' for treatments and remedies." });
-    }
-
-    if (input.includes("hear voices") || input.includes("see things") || input.includes("not real")) {
-      return res.json({ reply: "🧠 These symptoms may relate to schizophrenia or hallucinations. Type 'schizophrenia' to learn more." });
+    for(let item of dataset){
+      const question = (item.question||"").toLowerCase();
+      const keywords = item.keywords||[];
+      if(input.includes(question)||question.includes(input)||keywords.some(k=>input.includes(k.toLowerCase())))
+        return res.json({reply:item.answer});
     }
 
-    if (input.includes("no motivation") || input.includes("no energy") || input.includes("lazy")) {
-      return res.json({ reply: "🧪 This may relate to dopamine imbalance. Type 'dopamine' to learn more." });
-    }
-
-    // 🔍 Smart dataset matching
-    for (let item of dataset) {
-      const question = (item.question || "").toLowerCase();
-      const keywords = item.keywords || [];
-
-      if (
-        input.includes(question) ||
-        question.includes(input) ||
-        keywords.some(k => input.includes(k.toLowerCase()))
-      ) {
-        return res.json({ reply: item.answer });
-      }
-    }
-
-    // ❌ Default response
-    return res.json({
-      reply: "🤖 I couldn't fully understand. Try asking about schizophrenia, anxiety, dopamine, or symptoms."
-    });
-
-  } catch (err) {
-    console.error("❌ CHAT ERROR:", err);
-    return res.status(500).json({ reply: "❌ Server error" });
+    return res.json({reply:"🤖 Sorry, I couldn't understand. Try keywords like schizophrenia, anxiety, dopamine."});
+  }catch(err){
+    console.error(err);
+    return res.status(500).json({reply:"❌ Server error"});
   }
 });
 
-// Frontend fallback (ONLY ONCE)
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+app.get("*",(req,res)=>{
+  res.sendFile(path.join(__dirname,"public","index.html"));
 });
 
-// Start server (ONLY ONCE)
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log("🚀 Server running on port", PORT);
-});
+app.listen(PORT,()=>console.log("🚀 Server running on port",PORT));

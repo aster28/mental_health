@@ -41,9 +41,8 @@ app.post("/chat", (req, res) => {
       }
     }
 
-    // No match
     return res.json({
-      reply: "🤖 Sorry, no information found. Try another keyword like schizophrenia, anxiety, dopamine."
+      reply: "🤖 Sorry, no information found. Try keywords like schizophrenia, dopamine, anxiety."
     });
 
   } catch (err) {
@@ -52,12 +51,12 @@ app.post("/chat", (req, res) => {
   }
 });
 
-// Front-end fallback (ONLY ONCE)
+// Front-end fallback
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-// Start server (ONLY ONCE)
+// Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);

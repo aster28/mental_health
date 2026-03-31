@@ -29,7 +29,7 @@ app.post("/chat", (req, res) => {
       const question = (item.question || "").toLowerCase();
       const keywords = item.keywords || [];
 
-      if (input.includes(question)) {
+      if (input.includes(question) || question.includes(input)) {
         res.json({ reply: item.answer });
         found = true;
         break;

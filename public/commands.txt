@@ -1,0 +1,8 @@
+git init
+git add .
+git commit -m "Render-ready mental health chatbot"
+git branch -M main
+
+git remote add origin https://github.com/aster28/mental_health.git
+
+git push -u origin main

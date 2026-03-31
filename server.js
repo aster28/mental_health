@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, "public")));
 let dataset = [];
 try {
   dataset = JSON.parse(fs.readFileSync(path.join(__dirname, "data.json")));
-  console.log(`✅ Data loaded: ${dataset.length} items`);
+  console.log("✅ Data loaded:", dataset.length);
 } catch (err) {
   console.error("❌ Error loading data.json:", err);
 }
@@ -28,19 +28,18 @@ app.post("/chat", (req, res) => {
       const question = (item.question || "").toLowerCase();
       const keywords = item.keywords || [];
 
-      // Match question
       if (input.includes(question) || question.includes(input)) {
         return res.json({ reply: item.answer });
       }
 
-      // Match keywords
       for (let key of keywords) {
         if (input.includes(key.toLowerCase())) {
           return res.json({ reply: item.answer });
         }
       }
-    }
+    } // ✅ CLOSE for-loop properly
 
+    // No match
     return res.json({
       reply: "🤖 Sorry, no information found. Try keywords like schizophrenia, dopamine, anxiety."
     });
@@ -51,13 +50,13 @@ app.post("/chat", (req, res) => {
   }
 });
 
-// Front-end fallback
+// Frontend fallback (ONLY ONCE)
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-// Start server
+// Start server (ONLY ONCE)
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
+  console.log("🚀 Server running on port", PORT);
 });

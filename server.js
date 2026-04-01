@@ -22,50 +22,71 @@ try {
 // Chat API
 app.post("/chat", (req, res) => {
   try {
-    const input = (req.body.message || "").toLowerCase().trim();
+    const input = (req.body.message || "").toLowerCase();
 
-    // 🧠 AI-like intent detection
-    if (input.includes("sad") || input.includes("low") || input.includes("hopeless")) {
-      return res.json({ reply: "😞 It sounds like depression. Try typing 'depression' to learn more." });
+    // 🧠 Symptom detection
+    let score = {
+     depression: 0,
+     anxiety: 0,
+     schizophrenia: 0,
+     insomnia: 0
+};
+
+   if (input.includes("sad")) score.depression++;
+   if (input.includes("tired")) score.depression++;
+   if (input.includes("hopeless")) score.depression++;
+
+   if (input.includes("fear")) score.anxiety++;
+   if (input.includes("panic")) score.anxiety++;
+
+   if (input.includes("voices")) score.schizophrenia++;
+   if (input.includes("hallucination")) score.schizophrenia++;
+
+   if (input.includes("no sleep")) score.insomnia++;
+
+   let result = Object.keys(score).filter(k => score[k] > 0);
+
+   if (result.length > 0) {
+     return res.json({
+     reply: `🧠 Possible conditions:\n👉 ${result.join(", ")}\n\n⚠️ Not a medical diagnosis.`
+  });
+}
+    let severity = "mild";
+
+    if (input.includes("very") || input.includes("extreme")) {
+      severity = "severe";
+}
+
+      return res.json({
+       reply: `🧠 Possible condition: depression\n⚡ Severity: ${severity}\n\n⚠️ Please consult a doctor.`
+});
+    // 🧠 If symptoms found
+    if (detected.length > 0) {
+      return res.json({
+        reply: `🧠 Based on symptoms, possible conditions:\n\n👉 ${detected.join(", ")}\n\n⚠️ This is not a diagnosis. Consult a doctor.`
+      });
     }
 
-    if (input.includes("anxious") || input.includes("panic") || input.includes("nervous")) {
-      return res.json({ reply: "😰 This may relate to anxiety. Type 'anxiety' for treatments and remedies." });
-    }
-
-    if (input.includes("hear voices") || input.includes("see things") || input.includes("not real")) {
-      return res.json({ reply: "🧠 These symptoms may relate to schizophrenia or hallucinations. Type 'schizophrenia' to learn more." });
-    }
-
-    if (input.includes("no motivation") || input.includes("no energy") || input.includes("lazy")) {
-      return res.json({ reply: "🧪 This may relate to dopamine imbalance. Type 'dopamine' to learn more." });
-    }
-
-    // 🔍 Smart dataset matching
+    // 📚 Dataset matching
     for (let item of dataset) {
-      const question = (item.question || "").toLowerCase();
-      const keywords = item.keywords || [];
-
       if (
-        input.includes(question) ||
-        question.includes(input) ||
-        keywords.some(k => input.includes(k.toLowerCase()))
+        input.includes(item.question) ||
+        item.keywords.some(k => input.includes(k))
       ) {
         return res.json({ reply: item.answer });
       }
     }
 
-    // ❌ Default response
+    // 🤖 Smart fallback
     return res.json({
-      reply: "🤖 I couldn't fully understand. Try asking about schizophrenia, anxiety, dopamine, or symptoms."
+      reply: "🤖 Try describing your symptoms like 'sad, tired, anxious, can't sleep'."
     });
 
   } catch (err) {
-    console.error("❌ CHAT ERROR:", err);
+    console.error(err);
     return res.status(500).json({ reply: "❌ Server error" });
   }
 });
-
 // Frontend fallback (ONLY ONCE)
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));

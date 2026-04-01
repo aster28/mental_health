@@ -1,12 +1,12 @@
 [
   {
     "question": "schizophrenia",
-    "keywords": ["voices", "hallucination", "delusion"],
-    "answer": "🧠 Schizophrenia is a mental disorder affecting thinking, perception, and behavior.\n\n💊 Allopathy: Risperidone, Olanzapine\n🌿 Ayurveda: Brahmi, Ashwagandha\n🌱 Plants: Ginkgo biloba\n⚠️ Consult a doctor."
+    "keywords": ["voices", "hallucination", "delusion", "psychosis"],
+    "answer": "🧠 Schizophrenia is a serious mental disorder affecting thinking and perception.\n\n💊 Allopathy: Risperidone, Olanzapine\n🌿 Ayurveda: Brahmi, Ashwagandha\n🌱 Plants: Ginkgo biloba\n⚠️ Consult a doctor."
   },
   {
     "question": "delusion",
-    "keywords": ["false belief", "not real belief"],
+    "keywords": ["false belief", "not real"],
     "answer": "🤯 Delusion is a strong false belief despite evidence.\nExample: thinking someone is spying on you."
   },
   {
@@ -17,47 +17,32 @@
   {
     "question": "dopamine",
     "keywords": ["motivation", "reward", "brain chemical"],
-    "answer": "🧪 Dopamine is a neurotransmitter controlling pleasure and motivation.\n\nLow → depression\nHigh → schizophrenia"
+    "answer": "🧪 Dopamine is a neurotransmitter controlling motivation and pleasure.\nLow → depression\nHigh → schizophrenia"
   },
   {
     "question": "depression",
-    "keywords": ["sad", "low mood", "hopeless"],
-    "answer": "😞 Depression is a mood disorder causing sadness and loss of interest.\n\n💊 SSRIs\n🌿 Ashwagandha\n🌱 St John's Wort\n⚠️ Consult a doctor."
+    "keywords": ["sad", "hopeless", "low mood"],
+    "answer": "😞 Depression causes persistent sadness.\n\n💊 SSRIs\n🌿 Ashwagandha\n🌱 St John's Wort"
   },
   {
     "question": "anxiety",
     "keywords": ["fear", "panic", "nervous"],
-    "answer": "😰 Anxiety is excessive worry or fear.\n\n💊 Benzodiazepines\n🌿 Ashwagandha\n🌱 Chamomile"
-  },
-  {
-    "question": "hallucination",
-    "keywords": ["seeing things", "hearing voices"],
-    "answer": "👂 Hallucination is perceiving something that is not real (hearing or seeing things)."
-  },
-  {
-    "question": "stress",
-    "keywords": ["pressure", "tension"],
-    "answer": "😣 Stress is the body's response to pressure.\n\n🌿 Meditation, Yoga\n🌱 Tulsi, Ashwagandha"
-  },
-  {
-    "question": "vata",
-    "keywords": ["ayurveda air", "movement"],
-    "answer": "🌬️ Vata dosha controls movement and nervous system.\nImbalance → anxiety, restlessness."
-  },
-  {
-    "question": "pitta",
-    "keywords": ["ayurveda fire", "digestion"],
-    "answer": "🔥 Pitta dosha controls metabolism and digestion.\nImbalance → anger, irritation."
-  },
-  {
-    "question": "kapha",
-    "keywords": ["ayurveda water", "structure"],
-    "answer": "🌊 Kapha dosha controls structure and stability.\nImbalance → laziness, depression."
+    "answer": "😰 Anxiety is excessive worry.\n\n💊 Benzodiazepines\n🌿 Ashwagandha\n🌱 Chamomile"
   },
   {
     "question": "bipolar disorder",
-    "keywords": ["mood swings", "mania"],
-    "answer": "🎭 Bipolar disorder causes extreme mood swings (mania + depression).\n\n💊 Mood stabilizers\n🌿 Brahmi"
+    "keywords": ["mania", "mood swings"],
+    "answer": "🎭 Bipolar disorder causes extreme mood swings.\n\n💊 Mood stabilizers\n🌿 Brahmi"
+  },
+  {
+    "question": "ocd",
+    "keywords": ["obsession", "compulsion"],
+    "answer": "🔁 OCD involves repeated unwanted thoughts and actions.\n\n💊 SSRIs\n🧠 Therapy"
+  },
+  {
+    "question": "ptsd",
+    "keywords": ["trauma", "flashback"],
+    "answer": "⚠️ PTSD occurs after trauma.\n\n🧠 Therapy\n🌿 Meditation"
   },
   {
     "question": "insomnia",
@@ -65,13 +50,49 @@
     "answer": "🌙 Insomnia is difficulty sleeping.\n\n🌿 Ashwagandha, Brahmi\n💊 Sleep aids"
   },
   {
-    "question": "ocd",
-    "keywords": ["obsession", "compulsion"],
-    "answer": "🔁 OCD causes repeated unwanted thoughts and behaviors.\n\n💊 SSRIs\n🧠 Therapy"
+    "question": "stress",
+    "keywords": ["pressure", "tension"],
+    "answer": "😣 Stress is response to pressure.\n\n🌿 Yoga, meditation\n🌱 Tulsi"
   },
   {
-    "question": "ptsd",
-    "keywords": ["trauma", "flashback"],
-    "answer": "⚠️ PTSD is stress disorder after trauma.\n\n💊 Therapy\n🌿 Relaxation techniques"
+    "question": "vata",
+    "keywords": ["air", "movement"],
+    "answer": "🌬️ Vata controls movement.\nImbalance → anxiety."
+  },
+  {
+    "question": "pitta",
+    "keywords": ["fire", "digestion"],
+    "answer": "🔥 Pitta controls metabolism.\nImbalance → anger."
+  },
+  {
+    "question": "kapha",
+    "keywords": ["water", "structure"],
+    "answer": "🌊 Kapha controls stability.\nImbalance → laziness."
+  },
+
+  {
+    "question": "ashwagandha",
+    "keywords": ["herb", "ayurveda plant"],
+    "answer": "🌿 Ashwagandha reduces stress, anxiety, and improves sleep."
+  },
+  {
+    "question": "brahmi",
+    "keywords": ["memory herb"],
+    "answer": "🌿 Brahmi improves memory and brain function."
+  },
+  {
+    "question": "ginkgo",
+    "keywords": ["memory plant"],
+    "answer": "🌱 Ginkgo biloba improves memory and blood circulation."
+  },
+  {
+    "question": "chamomile",
+    "keywords": ["calm herb"],
+    "answer": "🌼 Chamomile helps with anxiety and sleep."
+  },
+  {
+    "question": "tulsi",
+    "keywords": ["holy basil"],
+    "answer": "🌿 Tulsi reduces stress and boosts immunity."
   }
 ]

@@ -4,13 +4,7 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
-const words = input.split(" ");
 
-if (words.length > 5) {
-  return res.json({
-    reply: "🤖 I understand you're asking a detailed question. Try simplifying or ask about a specific condition."
-  });
-}
 // Middleware
 app.use(cors());
 app.use(express.json());

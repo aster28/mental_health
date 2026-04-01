@@ -1,21 +1,77 @@
-
-{
-  "question": "schizophrenia meaning",
-  "keywords": ["what is schizophrenia", "define schizophrenia", "schizophrenia meaning"],
-  "answer": "🧠 **Schizophrenia** is a serious mental disorder that affects thinking, emotions, and behavior. People may experience hallucinations, delusions, disorganized speech, and difficulty distinguishing reality."
-},
-{
-  "question": "delusion meaning",
-  "keywords": ["what is delusion", "define delusion", "false belief"],
-  "answer": "🤯 **Delusion** is a strong false belief that is not based in reality and does not change even when proven wrong. It is commonly seen in schizophrenia."
-},
-{
-  "question": "illusion meaning",
-  "keywords": ["what is illusion", "define illusion"],
-  "answer": "👁️ **Illusion** is a misinterpretation of a real external stimulus. For example, seeing a rope and thinking it is a snake."
-},
-{
-  "question": "hallucination meaning",
-  "keywords": ["what is hallucination", "define hallucination"],
-  "answer": "👂 **Hallucination** is perceiving something that is not actually present, such as hearing voices or seeing things that are not there."
-}
+[
+  {
+    "question": "schizophrenia",
+    "keywords": ["voices", "hallucination", "delusion"],
+    "answer": "🧠 Schizophrenia is a mental disorder affecting thinking, perception, and behavior.\n\n💊 Allopathy: Risperidone, Olanzapine\n🌿 Ayurveda: Brahmi, Ashwagandha\n🌱 Plants: Ginkgo biloba\n⚠️ Consult a doctor."
+  },
+  {
+    "question": "delusion",
+    "keywords": ["false belief", "not real belief"],
+    "answer": "🤯 Delusion is a strong false belief despite evidence.\nExample: thinking someone is spying on you."
+  },
+  {
+    "question": "illusion",
+    "keywords": ["misinterpretation", "wrong perception"],
+    "answer": "👁️ Illusion is misinterpreting something real.\nExample: rope seen as snake."
+  },
+  {
+    "question": "dopamine",
+    "keywords": ["motivation", "reward", "brain chemical"],
+    "answer": "🧪 Dopamine is a neurotransmitter controlling pleasure and motivation.\n\nLow → depression\nHigh → schizophrenia"
+  },
+  {
+    "question": "depression",
+    "keywords": ["sad", "low mood", "hopeless"],
+    "answer": "😞 Depression is a mood disorder causing sadness and loss of interest.\n\n💊 SSRIs\n🌿 Ashwagandha\n🌱 St John's Wort\n⚠️ Consult a doctor."
+  },
+  {
+    "question": "anxiety",
+    "keywords": ["fear", "panic", "nervous"],
+    "answer": "😰 Anxiety is excessive worry or fear.\n\n💊 Benzodiazepines\n🌿 Ashwagandha\n🌱 Chamomile"
+  },
+  {
+    "question": "hallucination",
+    "keywords": ["seeing things", "hearing voices"],
+    "answer": "👂 Hallucination is perceiving something that is not real (hearing or seeing things)."
+  },
+  {
+    "question": "stress",
+    "keywords": ["pressure", "tension"],
+    "answer": "😣 Stress is the body's response to pressure.\n\n🌿 Meditation, Yoga\n🌱 Tulsi, Ashwagandha"
+  },
+  {
+    "question": "vata",
+    "keywords": ["ayurveda air", "movement"],
+    "answer": "🌬️ Vata dosha controls movement and nervous system.\nImbalance → anxiety, restlessness."
+  },
+  {
+    "question": "pitta",
+    "keywords": ["ayurveda fire", "digestion"],
+    "answer": "🔥 Pitta dosha controls metabolism and digestion.\nImbalance → anger, irritation."
+  },
+  {
+    "question": "kapha",
+    "keywords": ["ayurveda water", "structure"],
+    "answer": "🌊 Kapha dosha controls structure and stability.\nImbalance → laziness, depression."
+  },
+  {
+    "question": "bipolar disorder",
+    "keywords": ["mood swings", "mania"],
+    "answer": "🎭 Bipolar disorder causes extreme mood swings (mania + depression).\n\n💊 Mood stabilizers\n🌿 Brahmi"
+  },
+  {
+    "question": "insomnia",
+    "keywords": ["no sleep", "sleep problem"],
+    "answer": "🌙 Insomnia is difficulty sleeping.\n\n🌿 Ashwagandha, Brahmi\n💊 Sleep aids"
+  },
+  {
+    "question": "ocd",
+    "keywords": ["obsession", "compulsion"],
+    "answer": "🔁 OCD causes repeated unwanted thoughts and behaviors.\n\n💊 SSRIs\n🧠 Therapy"
+  },
+  {
+    "question": "ptsd",
+    "keywords": ["trauma", "flashback"],
+    "answer": "⚠️ PTSD is stress disorder after trauma.\n\n💊 Therapy\n🌿 Relaxation techniques"
+  }
+]
